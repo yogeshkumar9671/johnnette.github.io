@@ -32,7 +32,9 @@ header {
 }
 
 header .logo img {
-    width: 80%;
+    width: 70%;
+    height: auto;
+    border-radius: 60%;
 }
 
 header .navbar ul {
