@@ -183,15 +183,15 @@ header .navbar li:hover .sub-menu-1 ul li a {
  }
 
 .whatsapp {
-   position: fixed;
-   bottom: 25px;
-   right: 20px;
- }
-        
- .whatsapp .whatsapp-button {
-    width: 10%;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.whatsapp .whatsapp-button {
+    width: 6.5%;
     float: right;
- }
+}
 
  .main{
      margin-top: 138px;
