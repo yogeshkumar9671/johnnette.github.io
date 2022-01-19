@@ -203,8 +203,8 @@ header .navbar li:hover .sub-menu-1 ul li a {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     }
     .whatsapp {
-/*         position: fixed; */
-        bottom: 20px;
+        position: fixed;
+        bottom: 15px;
         right: 10px;
     }
 }
