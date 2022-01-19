@@ -79,7 +79,7 @@ header .navbar ul li a:hover {
     position: relative;
     color: white;
     background: #943131;
-    font-size: 1.2rem;
+/*     font-size: 1.2rem; */
 }
 header .icons i:hover,
 header .icons .fab-icons a:hover {
