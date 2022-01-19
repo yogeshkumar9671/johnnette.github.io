@@ -114,12 +114,40 @@ header .navbar li:hover .sub-menu-1 ul li a {
     border: 1px solid #fff;
 } 
 
-/* -------------------sub-menu------------------------------------ */
+/* -------------------sub-menu-end----------------------------------- */
 
 
+/* ----------------------content---------------- */
+ body{
+     background-color: #464545;
+     display: grid;
+ }
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.whatsapp .whatsapp-button {
+    width: 70%;
+    float: right;
+}
+
+ .main{
+     margin-top: 138px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #9b9b9b;
+     line-height: 4.2em;
+     font-size: 80px;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
 
 
-
+/* ----------------------content---------------- */
 
 
 
@@ -181,34 +209,6 @@ header .navbar li:hover .sub-menu-1 ul li a {
     }
 }
 
-/* ----------------------content---------------- */
- body{
-     background-color: #464545;
-     display: grid;
- }
-
-.whatsapp {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-}
-
-.whatsapp .whatsapp-button {
-    width: 70%;
-    float: right;
-}
-
- .main{
-     margin-top: 138px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: #9b9b9b;
-     line-height: 4.2em;
-     font-size: 80px;
-     text-transform: uppercase;
-     font-weight: bold;
- }
 
 /* --------------footer section------------------------ */
 .footer{
