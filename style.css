@@ -186,6 +186,17 @@ header .navbar li:hover .sub-menu-1 ul li a {
      display: grid;
  }
 
+.whatsapp {
+   position: fixed;
+   bottom: 20px;
+   right: 10px;
+ }
+        
+ .whatsapp-button {
+    width: 10%;
+    float: right;
+ }
+
  .main{
      margin-top: 138px;
      display: flex;
