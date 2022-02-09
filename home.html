@@ -1,0 +1,223 @@
+{% extends 'app/base.html' %} {% load static %} {% block title %}Home{% endblock title %} {% block page_css %}
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- google font CDN  font-family: 'Sacramento', cursive;  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+<!-- google font CDN  font-family: 'Source Serif 4', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Source+Serif+4:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Demo styles -->
+<style>
+    body {
+        background: #eee;
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* ending of swiperjs */
+    /* about section */
+    
+    .about {
+        padding-top: 20px;
+        background-color: #e0e8fd;
+    }
+    
+    .about .container {
+        max-width: 1000px;
+    }
+    
+    .about h2 {
+        font-family: 'Sacramento', cursive;
+        font-weight: 800;
+        font-size: 30px;
+        color: rgb(107, 27, 27);
+    }
+    
+    .about h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        color: rgb(73, 27, 27);
+        font-size: 40px;
+    }
+    
+    .about span {
+        font-family: 'Source Serif 4', sans-serif;
+        font-size: 18px;
+    }
+    
+    .about h5 {
+        margin-top: 10px;
+        font-family: 'Source Serif 4', sans-serif;
+        color: rgb(73, 27, 27);
+        font-size: 21px;
+    }
+    /* ending of  about section  */
+    /* starting of product section  */
+    
+    .box {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .box .product img {
+        width: 90%;
+        transition: all .5s;
+    }
+    
+    .box .product:hover img {
+        width: 95%;
+    }
+    
+    .img_container {
+        position: relative;
+    }
+    
+    .product p {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+        padding: 15px 0;
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Source Serif 4', sans-serif;
+        background-color: rgba(238, 238, 238, .7);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        transition: all .2s;
+    }
+    
+    .box .product:hover p {
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+</style>
+{% endblock page_css %} {% block banner_slider %}
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="{% static 'app/images/banner/banner4.jpg' %}" class="d-block w-100" alt="..."></div>
+        <div class="swiper-slide"><img src="{% static 'app/images/banner/banner1.jpg' %}" class="d-block w-100" alt="..."></div>
+        <div class="swiper-slide"><img src="{% static 'app/images/banner/banner2.jpg' %}" class="d-block w-100" alt="..."></div>
+        <div class="swiper-slide"><img src="{% static 'app/images/banner/banner3.jpg' %}" class="d-block w-100" alt="..."></div>
+        <!-- <div class="swiper-slide"><img src="{% static 'app/images/banner/banner6.jpg' %}" class="d-block w-100" alt="..."></div>
+      <div class="swiper-slide"><img src="{% static 'app/images/banner/banner5.jpg' %}" class="d-block w-100" alt="..."></div>
+      <div class="swiper-slide"><img src="{% static 'app/images/banner/banner7.jpg' %}" class="d-block w-100" alt="..."></div>
+    </div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+{% endblock banner_slider %} {% block about %}
+<div class="about">
+    <div class="container">
+        <h2>About Koffette</h2>
+        <div class="about_koffette">
+            <h1>Welcome to Koffette, the unique & rich flavor of Dry Fruits you seek</h1>
+            <span>At Koffette we specialize in the fine art and delicacy of roasted nuts. Most nuts including Koffette have many health benefits to their name, yet not many have the unique and rich flavor Koffette do. Thus we have incorporated real everlasting flavor and nuitrition with many other food in order to come out with a sweet dessert and a unique taste.</span>
+            <h5>Learn more about Koffette...</h5>
+        </div>
+    </div>
+</div>
+{% endblock about %} {% block content %}
+<section style="padding-bottom: 10px">
+    <div class="container" style="max-width: 1000px;">
+        <div class="row">
+            <div class="title">
+                <h2 class="my-3" style="text-align: left; font-size: 30px;">Our Products</h2>
+                <hr style="max-width: 952px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product_section">
+    <div class="container" style="max-width: 1000px;">
+        <div class="box" style="height: 250px;">
+            <div class="product">
+                <div class="img_container">
+                    <img src="{% static 'app/images/home/products/shoes.webp' %}" alt="">
+                    <p>View Now</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="{% static 'app/images/home/products/jacket.webp' %}" alt="">
+            </div>
+            <div class="product">
+                <img src="{% static 'app/images/home/products/watch.webp' %}" alt="">
+            </div>
+            <div class="product">
+                <img src="{% static 'app/images/home/products/glassess.webp' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section style="padding-bottom: 10px">
+    <div class="container" style="max-width: 1000px;">
+        <div class="row">
+            <div class="title">
+                <h2 class="my-3" style="text-align: left;">Our Products</h2>
+                <hr style="max-width: 952px;">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %} {% block page_js %}
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+{% endblock page_js %}
