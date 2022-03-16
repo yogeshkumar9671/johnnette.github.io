@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- google fonts  -->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- wiper js cdn link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <base target="_parent">
+
+    <!-- custom css file link -->
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background: black;
+            margin-bottom: 0;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: black;
+/*             height: calc((60% - -80px) / 2) !important; */
+            height: calc((100% - 30px) / 2) !important;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: fixed;
+/*             top: 46.5%; */
+            top: 50%;
+        }
+        /* ------------------------ */
+
+        .update {
+            text-align: center;
+            color: #fff;
+            font-family: montserrat, sans-serif;
+            font-weight: 600;
+            background-color: rgb(126, 40, 40);
+            padding: 10px 0;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide a:hover {
+            background-color: gray;
+        }
+
+        .card {
+            position: relative;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .card p {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #262626;
+            background-color: rgb(192, 189, 189);
+            height: 50px;
+            overflow: hidden;
+            padding-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Johnnette for your Industry -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/survey"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Survey.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">SURVEY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/security"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Security.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">SECURITY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/cinema"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Cinema.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">CINEMA</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/military"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Military.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">MILITARY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/indistrial"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Industrial.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">INDUSTRIAL</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/agriculture"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Agriculture.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">AGRICULTURE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/survey" style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Survey.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">SURVEY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/security" style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Security.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">SECURITY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/cinema" style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Cinema.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">CINEMA</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/military" style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Military.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">MILITARY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/indistrial"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Industrial.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">INDUSTRIAL</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://www.johnnette.com/agriculture"
+                        style="width: 100%; height: 100%; display: inline-block;">
+                        <div class="card"
+                            style="background-image: url(../../img/index/industry/Agriculture.jpg); background-repeat: no-repeat; background-size: cover; width: 300px; height: 200px;">
+                            <p class="card-text">AGRICULTURE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next" style="color: white;"></div>
+    <div class="swiper-button-prev" style="color: white;"></div>
+    <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            // loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetweenSlides: 30,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+                // when window width is >= 1440px
+                1440: {
+                    slidesPerView: 3,
+                    spaceBetweenSlides: 30,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            grid: {
+                rows: 2,
+            },
+            //  And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>

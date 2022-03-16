@@ -1,0 +1,62 @@
+.update {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(126, 40, 40);
+    padding: 10px 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide a:hover {
+    background-color: gray;
+}
+.card {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+.card p {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #262626;
+    background-color: rgb(192, 189, 189);
+    height: 50px;
+    overflow: hidden;
+}
+.see_more {
+    text-align: center;
+    padding-bottom: 20px;
+    background: black;
+}
